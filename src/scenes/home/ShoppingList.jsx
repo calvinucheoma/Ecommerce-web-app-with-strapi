@@ -69,19 +69,19 @@ const ShoppingList = () => {
         columnGap="1.33%"
       >
         {value === 'all' &&
-          items.map((item) => (
+          items?.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
           ))}
         {value === 'newArrivals' &&
-          newArrivalsItems.map((item) => (
+          newArrivalsItems?.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
           ))}
         {value === 'bestSellers' &&
-          bestSellersItems.map((item) => (
+          bestSellersItems?.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
           ))}
         {value === 'topRated' &&
-          topRatedItems.map((item) => (
+          topRatedItems?.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
           ))}
       </Box>

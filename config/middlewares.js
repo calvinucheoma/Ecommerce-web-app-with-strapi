@@ -1,15 +1,17 @@
 module.exports = ({ env }) => ({
   load: [
-    "strapi::errors",
-    "strapi::security",
-    "strapi::cors",
-    "strapi::poweredBy",
-    "strapi::logger",
-    "strapi::query",
-    "strapi::body",
-    "strapi::session",
-    "strapi::favicon",
-    "strapi::public",
+    "cors",
+    "poweredBy",
+    "logger",
+    "query",
+    "body",
+    "session",
+    "favicon",
+    "public",
+    "i18n",
+    "users-permissions",
+    "errors",
+    "security",
   ],
   settings: {
     cors: {

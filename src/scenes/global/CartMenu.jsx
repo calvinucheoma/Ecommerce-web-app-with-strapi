@@ -68,7 +68,7 @@ const CartMenu = () => {
                   <FlexBox p="15px 0">
                     <Box flex="1 1 40%">
                       <img
-                        src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+                        src={`https://chuks-shopify-deluxe.onrender.com${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
                         alt={item?.attributes?.name}
                         width="123px"
                         height="164px"

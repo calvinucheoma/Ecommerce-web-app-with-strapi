@@ -37,7 +37,7 @@ const Item = ({ item, width }) => {
         <img
           width="300px"
           height="400px"
-          src={`http://localhost:1337${url}`}
+          src={`https://chuks-shopify-deluxe.onrender.com${url}`}
           alt={name}
           onClick={() => navigate(`/item/${item.id}`)}
           style={{ cursor: 'pointer' }}

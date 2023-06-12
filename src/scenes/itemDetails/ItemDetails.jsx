@@ -21,7 +21,8 @@ const ItemDetails = () => {
 
   const getItem = async () => {
     const item = await fetch(
-      `http://localhost:1337/api/items/${itemId}?populate=image`,
+      `https://chuks-shopify-deluxe.onrender.com/api/items/${itemId}?populate=image`,
+      // `http://localhost:1337/api/items/${itemId}?populate=image`,
       { method: 'GET' }
     );
     const itemJSON = await item.json();
@@ -30,7 +31,7 @@ const ItemDetails = () => {
 
   const getRelatedItems = async () => {
     const items = await fetch(
-      'http://localhost:1337/api/items?populate=image',
+      'https://chuks-shopify-deluxe.onrender.com/items?populate=image',
       { method: 'GET' }
     );
     const itemsJSON = await items.json();
@@ -48,7 +49,7 @@ const ItemDetails = () => {
         {/* Images */}
         <Box flex="1 1 40%" mb="40px">
           <img
-            src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+            src={`https://chuks-shopify-deluxe.onrender.com${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
             alt={item?.attributes?.name}
             width="100%"
             height="100%"

@@ -18,7 +18,7 @@ const ShoppingList = () => {
   //Grab all items from strapi backend
   const getItems = async () => {
     const items = await fetch(
-      'http://localhost:1337/api/items?populate=image',
+      'https://chuks-shopify-deluxe.onrender.com/api/items?populate=image',
       { method: 'GET' }
     );
     const itemsJSON = await items.json();

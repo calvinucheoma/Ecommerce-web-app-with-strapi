@@ -1,22 +1,12 @@
-module.exports = {
-  settings: {
-    cors: {
-      enabled: true,
-      origin: "*",
-    },
-  },
-  load: [
-    "cors",
-    "poweredBy",
-    "logger",
-    "i18n",
-    "public",
-    "users-permissions",
-    "session",
-    "security",
-    "query",
-    "body",
-    "favicon",
-    "errors",
-  ],
-};
+module.exports = [
+  "strapi::errors",
+  "strapi::security",
+  "strapi::cors",
+  "strapi::poweredBy",
+  "strapi::logger",
+  "strapi::query",
+  "strapi::body",
+  "strapi::session",
+  "strapi::favicon",
+  "strapi::public",
+];

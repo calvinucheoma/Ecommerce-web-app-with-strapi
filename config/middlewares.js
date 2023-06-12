@@ -1,22 +1,22 @@
-module.exports = ({ env }) => ({
-  load: [
-    "cors",
-    "poweredBy",
-    "logger",
-    "query",
-    "body",
-    "session",
-    "favicon",
-    "public",
-    "i18n",
-    "users-permissions",
-    "errors",
-    "security",
-  ],
+module.exports = {
   settings: {
     cors: {
       enabled: true,
       origin: "*",
     },
   },
-});
+  load: [
+    "cors",
+    "poweredBy",
+    "logger",
+    "i18n",
+    "public",
+    "users-permissions",
+    "session",
+    "security",
+    "query",
+    "body",
+    "favicon",
+    "errors",
+  ],
+};
